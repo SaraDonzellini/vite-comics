@@ -22,7 +22,7 @@ export default {
 <template>
 <div class="wrapper">
   <div class="container flex">
-    <div class="flex">
+    <div class="lists flex">
       <div class="leftLists">
         <ul class="dccomics"> dc comics
           <li v-for="itemList in dcComicsList"> {{ itemList }}</li>
@@ -57,10 +57,11 @@ export default {
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
   }
 
+  .lists {
+    margin-top: 7rem;
+  }
   .flex{
     display: flex;
     justify-content: space-between;

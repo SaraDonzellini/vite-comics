@@ -39,6 +39,10 @@ export default {
 
     span {
       text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: #0282f9;
+      vertical-align: baseline;
 
     }
 
