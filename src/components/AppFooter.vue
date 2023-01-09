@@ -70,6 +70,7 @@ export default {
     margin: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: larger;
     color: white;
 
     li {
