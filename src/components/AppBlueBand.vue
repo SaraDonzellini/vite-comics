@@ -31,10 +31,13 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="container flex">
-      <div v-for="item in blueList" class="flex">
-      <img src='' alt='{{ item.text }}'><p>{{ item.text }}</p>
-      </div>
+    <div class="container">
+      <ul class="flex">
+        <li v-for="item in blueList" class="flex">
+          <img :src='item.image' :alt='item.text'><span>{{ item.text }}</span>
+        </li>
+
+      </ul>
     </div>
   </div>
 </template>
@@ -50,6 +53,15 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  img {
+    padding-top: 4rem;
+  }
+
+  span {
+    padding-top: 4rem;
+    text-transform: uppercase;
   }
 
   
