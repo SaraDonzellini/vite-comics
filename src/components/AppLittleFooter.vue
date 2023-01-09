@@ -24,8 +24,9 @@ export default {
 <style lang="scss" scoped>
   .wrapper{
     height: 8rem;
-    background-color: #1c1c1c;
+    background-color: #303030;
     color: white;
+    z-index: 2;
   }
 
   .flex{

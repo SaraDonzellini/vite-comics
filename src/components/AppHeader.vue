@@ -96,5 +96,11 @@ export default {
     }
   }
 
+  .active {
+      border-top: 0.5rem solid #ffffff;
+      border-bottom: 0.5rem solid #0282f9;
+      color: #0282f9;
+    }
+
 
 </style>

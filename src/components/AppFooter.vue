@@ -57,14 +57,20 @@ export default {
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 450px;
   }
 
   .lists {
-    margin-top: 7rem;
+    margin-top: 3rem;
   }
   .flex{
     display: flex;
     justify-content: space-between;
+  }
+
+  .logo img {
+    object-position: 0px -50px;
+    z-index: 1;
   }
 
   ul {
@@ -79,6 +85,7 @@ export default {
       font-size: smaller;
       list-style-type: none;
       color: #959595;
+      padding-top: 0.5rem;
 
     }
   }
