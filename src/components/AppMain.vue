@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2>Content goes here</h2>
+      <h2> --> Content goes here &lt-- </h2>
     </div>
 
   </div>
