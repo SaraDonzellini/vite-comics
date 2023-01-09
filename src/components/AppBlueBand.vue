@@ -4,23 +4,23 @@ export default {
     return {
       blueList : [
         {
-          image: '../assets/img/buy-comics-digital-comics.png',
+          image: 'src/assets/img/buy-comics-digital-comics.png',
           text: 'digital comics'
         },
         {
-          image: '../assets/img/buy-comics-merchandise.png',
+          image: 'src/assets/img/buy-comics-merchandise.png',
           text: 'dc merchandise'
         },
         {
-          image: '../assets/img/buy-comics-subscriptions.png',
+          image: 'src/assets/img/buy-comics-subscriptions.png',
           text: 'subscription'
         },
         {
-          image: '../assets/img/buy-comics-shop-locator.png',
+          image: 'src/assets/img/buy-comics-shop-locator.png',
           text: 'comic shop locator'
         },
         {
-          image: '../assets/img/buy-dc-power-visa.svg',
+          image: 'src/assets/img/buy-dc-power-visa.svg',
           text: 'DC power visa'
         },
       ]
@@ -32,7 +32,7 @@ export default {
 <template>
   <div class="wrapper">
     <div class="container">
-      <ul class="flex">
+      <ul class="list flex">
         <li v-for="item in blueList" class="flex">
           <img :src='item.image' :alt='item.text'><span>{{ item.text }}</span>
         </li>
@@ -55,13 +55,17 @@ export default {
     align-items: center;
   }
 
+  .list{
+    padding-top: 3rem;
+  }
+
   img {
-    padding-top: 4rem;
+    height: 60px;
   }
 
   span {
-    padding-top: 4rem;
     text-transform: uppercase;
+    padding-left: 0.5rem;
   }
 
   
