@@ -69,7 +69,7 @@ export default {
 
   img {
     height: 80px;
-    padding-top: 1rem;
+    // margin-top: 1rem 0;
   }
 
   .wrapper{
@@ -84,10 +84,13 @@ export default {
     padding: 2rem 1rem;
     font-size: smaller;
     font-weight: bold;
+    border-top: 0.5rem solid #ffffff;
     border-bottom: 0.5rem solid #ffffff;
+    // margin: 1rem 0;
 
     &:hover,
     &:active{
+      border-top: 0.5rem solid #ffffff;
       border-bottom: 0.5rem solid #0282f9;
       color: #0282f9;
     }
