@@ -20,9 +20,9 @@ export default {
 </script>
 
 <template>
-<div class="wrapper">
-  <div class="container flex">
-    <div class="lists flex">
+<div class="bottom-wrapper">
+  <div class="container bottom-flex">
+    <div class="bottom-lists bottom-flex">
       <div class="leftLists">
         <ul class="dccomics"> dc comics
           <li v-for="itemList in dcComicsList"> {{ itemList }}</li>
@@ -53,17 +53,18 @@ export default {
 
 <style lang="scss" scoped>
   
-  .wrapper{
+  .bottom-wrapper{
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
+    overflow: hidden;
   }
 
-  .lists {
+  .bottom-lists {
     margin-top: 3rem;
   }
-  .flex{
+  .bottom-flex{
     display: flex;
     justify-content: space-between;
   }

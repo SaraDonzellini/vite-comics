@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="container flex">
+  <div class="footer-wrapper">
+    <div class="container footer-flex">
       <button>sign-up now!</button>
       <div class="social">
         <span>Follow Us</span>
@@ -21,15 +21,15 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
-  .wrapper{
+<style lang="scss" >
+  .footer-wrapper{
     height: 8rem;
     background-color: #303030;
     color: white;
     z-index: 2;
   }
 
-  .flex{
+  .footer-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;

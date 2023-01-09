@@ -4,23 +4,23 @@ export default {
     return {
       blueList : [
         {
-          image: 'src/assets/img/buy-comics-digital-comics.png',
+          image: '/img/buy-comics-digital-comics.png',
           text: 'digital comics'
         },
         {
-          image: 'src/assets/img/buy-comics-merchandise.png',
+          image: '/img/buy-comics-merchandise.png',
           text: 'dc merchandise'
         },
         {
-          image: 'src/assets/img/buy-comics-subscriptions.png',
+          image: '/img/buy-comics-subscriptions.png',
           text: 'subscription'
         },
         {
-          image: 'src/assets/img/buy-comics-shop-locator.png',
+          image: '/img/buy-comics-shop-locator.png',
           text: 'comic shop locator'
         },
         {
-          image: 'src/assets/img/buy-dc-power-visa.svg',
+          image: '/img/buy-dc-power-visa.svg',
           text: 'DC power visa'
         },
       ]
