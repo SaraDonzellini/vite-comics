@@ -7,7 +7,6 @@ export default {
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2> --> Content goes here &lt-- </h2>
     </div>
 
   </div>
@@ -15,8 +14,8 @@ export default {
 
 <style lang="scss" scoped>
   .wrapper{
-    height: 8rem;
-    background-color: #1c1c1c;
+    height: 25rem;
+    background-image: url("../assets/img/jumbotron.jpg");
     color: white;
 
   }
