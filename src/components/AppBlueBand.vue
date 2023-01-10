@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      blueList : [
+      blueList: [
         {
           image: 'img/buy-comics-digital-comics.png',
           text: 'digital comics'
@@ -29,7 +29,7 @@ export default {
   methods: {
     getImagePath: function (imgPath) {
       return new URL(`../assets/${imgPath}`, import.meta.url).href;
-      
+
     }
   },
 }
@@ -49,30 +49,29 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-  .wrapper{
-    height: 10rem;
-    background-color: #0282f9;
-    color: white;
+.wrapper {
+  height: 10rem;
+  background-color: #0282f9;
+  color: white;
 
-  }
-  .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+}
 
-  .list{
-    padding-top: 3rem;
-  }
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  img {
-    height: 60px;
-  }
+.list {
+  padding-top: 3rem;
+}
 
-  span {
-    text-transform: uppercase;
-    padding-left: 0.5rem;
-  }
+img {
+  height: 60px;
+}
 
-  
+span {
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+}
 </style>
