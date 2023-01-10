@@ -4,26 +4,32 @@ export default {
     return {
       blueList : [
         {
-          image: '/img/buy-comics-digital-comics.png',
+          image: 'img/buy-comics-digital-comics.png',
           text: 'digital comics'
         },
         {
-          image: '/img/buy-comics-merchandise.png',
+          image: 'img/buy-comics-merchandise.png',
           text: 'dc merchandise'
         },
         {
-          image: '/img/buy-comics-subscriptions.png',
+          image: 'img/buy-comics-subscriptions.png',
           text: 'subscription'
         },
         {
-          image: '/img/buy-comics-shop-locator.png',
+          image: 'img/buy-comics-shop-locator.png',
           text: 'comic shop locator'
         },
         {
-          image: '/img/buy-dc-power-visa.svg',
+          image: 'img/buy-dc-power-visa.svg',
           text: 'DC power visa'
         },
       ]
+    }
+  },
+  methods: {
+    getImagePath: function (imgPath) {
+      return new URL(`../assets/${imgPath}`, import.meta.url).href;
+      
     }
   },
 }
@@ -34,7 +40,7 @@ export default {
     <div class="container">
       <ul class="list flex">
         <li v-for="item in blueList" class="flex">
-          <img :src='item.image' :alt='item.text'><span>{{ item.text }}</span>
+          <img :src='getImagePath(item.image)' :alt='item.text'><span>{{ item.text }}</span>
         </li>
 
       </ul>
