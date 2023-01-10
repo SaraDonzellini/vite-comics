@@ -12,8 +12,7 @@ export default {
 <template>
   <div>
     <div class="img-wrapper">
-    <img :src="thumbnail">
-
+      <img :src="thumbnail">
     </div>
     <p>{{ series }}</p>
   </div>
@@ -24,6 +23,11 @@ export default {
     margin-top: 1rem;
     height: 192px;
     overflow: hidden;
+
+      &:hover{
+        filter: grayscale(70%);
+
+      }
   }
   p{
     text-transform: uppercase;

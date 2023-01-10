@@ -2,12 +2,12 @@
 import AppCard from './AppCard.vue'
 
 export default {
-  components : {
+  components: {
     AppCard,
   },
   data() {
     return {
-      comicsList : [
+      comicsList: [
         {
           "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
           "price": "$19.99",
@@ -97,48 +97,57 @@ export default {
         Current Series
       </h1>
       <div class="card-wrapper flex">
-        <AppCard class="comic-card" v-for="comic in comicsList"
-          :thumbnail="comic.thumb"
-          :price="comic.price"
-          :series="comic.series"
-          :type="comic.type"
-        />
+        <AppCard class="comic-card" v-for="comic in comicsList" :thumbnail="comic.thumb" :price="comic.price"
+          :series="comic.series" :type="comic.type" />
       </div>
+      <h2> Load More</h2>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .jumbo-wrapper{
-    height: 25rem;
-    background-image: url("../assets/img/jumbotron.jpg");
-    color: white;
+.jumbo-wrapper {
+  height: 25rem;
+  background-image: url("../assets/img/jumbotron.jpg");
+  color: white;
 
-  }
+}
 
-  .comics-wrapper {
-    background-color: #1c1c1c;
-    height: 42rem;
-    color: white;
-  }
-  .comic-card{
-    width: calc((100% / 6) - 2rem);
-    max-width: 192px;
-    margin-left: 1.5rem;
-  }
+.comics-wrapper {
+  background-color: #1c1c1c;
+  height: 43rem;
+  color: white;
+}
+
+.comic-card {
+  width: calc((100% / 6) - 2rem);
+  max-width: 192px;
+  margin-left: 1.5rem;
+}
 
 
-  .flex{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  h1{
-    padding: 1rem;
-    width: 270px;
-    background-color: #0282f9;
-    text-transform: uppercase;
-    position: relative;
-    bottom: 30px;
-  }
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  padding: 1rem;
+  width: 270px;
+  background-color: #0282f9;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #0282f9;
+  text-transform: uppercase;
+  width: 150px;
+  position: relative;
+  left: 33rem;
+}
 </style>
